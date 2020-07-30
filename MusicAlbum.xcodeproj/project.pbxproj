@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7033E90599B37132426F679D /* Pods_MusicAlbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE75DFAC391286AB40CF2020 /* Pods_MusicAlbum.framework */; };
+		8A1C4F1124D1768400D7C084 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C4F1024D1768400D7C084 /* test.swift */; };
+		8A1C4F1424D1FA3B00D7C084 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C4F1324D1FA3B00D7C084 /* Artist.swift */; };
+		8A2D88CB24CB04480081EA97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2D88CA24CB04480081EA97 /* AppDelegate.swift */; };
+		8A2D88CF24CB04480081EA97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2D88CE24CB04480081EA97 /* ViewController.swift */; };
+		8A2D88D424CB04490081EA97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2D88D324CB04490081EA97 /* Assets.xcassets */; };
+		8A2D88D724CB04490081EA97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A2D88D524CB04490081EA97 /* LaunchScreen.storyboard */; };
+		8A2D88E224CB04490081EA97 /* MusicAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2D88E124CB04490081EA97 /* MusicAlbumTests.swift */; };
+		8A5A220724CC2D1A00D1F5ED /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A220624CC2D1A00D1F5ED /* Coordinator.swift */; };
+		8A5A220B24CC300400D1F5ED /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A220A24CC300400D1F5ED /* DataStore.swift */; };
+		8A5A220E24CC352700D1F5ED /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A220D24CC352700D1F5ED /* AppCoordinator.swift */; };
+		8A5A221024CC382A00D1F5ED /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A220F24CC382A00D1F5ED /* Navigator.swift */; };
+		8A5A221424CC494500D1F5ED /* SavedAlbumCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A221324CC494500D1F5ED /* SavedAlbumCoordinator.swift */; };
+		8A5A221624CC496000D1F5ED /* SavedAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A221524CC496000D1F5ED /* SavedAlbumViewController.swift */; };
+		8A5A221824CC496F00D1F5ED /* SavedAlbum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5A221724CC496F00D1F5ED /* SavedAlbum.storyboard */; };
+		8A5A221D24CC508400D1F5ED /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A221C24CC508400D1F5ED /* OnboardingCoordinator.swift */; };
+		8A5A221F24CC509200D1F5ED /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A221E24CC509200D1F5ED /* OnboardingViewController.swift */; };
+		8A5A222124CC509C00D1F5ED /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5A222024CC509C00D1F5ED /* Onboarding.storyboard */; };
+		8A5A222424CC5A0300D1F5ED /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A222324CC5A0300D1F5ED /* Album.swift */; };
+		8A5A222624CC5F2700D1F5ED /* ApprootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A222524CC5F2700D1F5ED /* ApprootViewController.swift */; };
+		8A5A222824CC651100D1F5ED /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A222724CC651100D1F5ED /* Storyboarded.swift */; };
+		8A5A222C24CC7A8800D1F5ED /* AlbumSearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A222B24CC7A8800D1F5ED /* AlbumSearchCoordinator.swift */; };
+		8A5A222E24CC7A9400D1F5ED /* AlbumSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A222D24CC7A9400D1F5ED /* AlbumSearchViewController.swift */; };
+		8A5A223024CC7AA100D1F5ED /* AlbumSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5A222F24CC7AA100D1F5ED /* AlbumSearch.storyboard */; };
+		8ABFD7FF24CF647100CCF15E /* RealmConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABFD7FE24CF647100CCF15E /* RealmConnector.swift */; };
+		8AF8597C24CC8C7900B166E3 /* OnboardingStep.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AF8597B24CC8C7900B166E3 /* OnboardingStep.xib */; };
+		8AF8597E24CC978600B166E3 /* CollectionAlbumPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF8597D24CC978600B166E3 /* CollectionAlbumPreview.swift */; };
+		8AF8598024CCA60E00B166E3 /* AlbumDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF8597F24CCA60E00B166E3 /* AlbumDetailsCoordinator.swift */; };
+		8AF8598224CCA62300B166E3 /* AlbumDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF8598124CCA62300B166E3 /* AlbumDetailsViewController.swift */; };
+		8AF8598424CCA64A00B166E3 /* AlbumDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF8598324CCA64A00B166E3 /* AlbumDetails.storyboard */; };
+		8AF8598724CDAC7F00B166E3 /* AlbumSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF8598624CDAC7F00B166E3 /* AlbumSearchManager.swift */; };
+		9C4BC4B990BCC05CBF7578CA /* Pods_MusicAlbumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A39A2983BC5EFB881D98BBC /* Pods_MusicAlbumTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A2D88DE24CB04490081EA97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A2D88BF24CB04480081EA97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A2D88C624CB04480081EA97;
+			remoteInfo = MusicAlbum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11994CBBEB71DCC96C5155F8 /* Pods-MusicAlbumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicAlbumTests.release.xcconfig"; path = "Target Support Files/Pods-MusicAlbumTests/Pods-MusicAlbumTests.release.xcconfig"; sourceTree = "<group>"; };
+		2A39A2983BC5EFB881D98BBC /* Pods_MusicAlbumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicAlbumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A1C4F1024D1768400D7C084 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		8A1C4F1324D1FA3B00D7C084 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		8A2D88C724CB04480081EA97 /* MusicAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2D88CA24CB04480081EA97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A2D88CE24CB04480081EA97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A2D88D324CB04490081EA97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A2D88D624CB04490081EA97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A2D88D824CB04490081EA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A2D88DD24CB04490081EA97 /* MusicAlbumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicAlbumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2D88E124CB04490081EA97 /* MusicAlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAlbumTests.swift; sourceTree = "<group>"; };
+		8A2D88E324CB04490081EA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A5A220624CC2D1A00D1F5ED /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8A5A220A24CC300400D1F5ED /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		8A5A220D24CC352700D1F5ED /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		8A5A220F24CC382A00D1F5ED /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		8A5A221324CC494500D1F5ED /* SavedAlbumCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedAlbumCoordinator.swift; sourceTree = "<group>"; };
+		8A5A221524CC496000D1F5ED /* SavedAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedAlbumViewController.swift; sourceTree = "<group>"; };
+		8A5A221724CC496F00D1F5ED /* SavedAlbum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SavedAlbum.storyboard; sourceTree = "<group>"; };
+		8A5A221C24CC508400D1F5ED /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		8A5A221E24CC509200D1F5ED /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		8A5A222024CC509C00D1F5ED /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		8A5A222324CC5A0300D1F5ED /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		8A5A222524CC5F2700D1F5ED /* ApprootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprootViewController.swift; sourceTree = "<group>"; };
+		8A5A222724CC651100D1F5ED /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		8A5A222B24CC7A8800D1F5ED /* AlbumSearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSearchCoordinator.swift; sourceTree = "<group>"; };
+		8A5A222D24CC7A9400D1F5ED /* AlbumSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSearchViewController.swift; sourceTree = "<group>"; };
+		8A5A222F24CC7AA100D1F5ED /* AlbumSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbumSearch.storyboard; sourceTree = "<group>"; };
+		8ABFD7FE24CF647100CCF15E /* RealmConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmConnector.swift; sourceTree = "<group>"; };
+		8AF8597B24CC8C7900B166E3 /* OnboardingStep.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingStep.xib; sourceTree = "<group>"; };
+		8AF8597D24CC978600B166E3 /* CollectionAlbumPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionAlbumPreview.swift; sourceTree = "<group>"; };
+		8AF8597F24CCA60E00B166E3 /* AlbumDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsCoordinator.swift; sourceTree = "<group>"; };
+		8AF8598124CCA62300B166E3 /* AlbumDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsViewController.swift; sourceTree = "<group>"; };
+		8AF8598324CCA64A00B166E3 /* AlbumDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbumDetails.storyboard; sourceTree = "<group>"; };
+		8AF8598624CDAC7F00B166E3 /* AlbumSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSearchManager.swift; sourceTree = "<group>"; };
+		93F20EFE99FC044341C364C8 /* Pods-MusicAlbum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicAlbum.debug.xcconfig"; path = "Target Support Files/Pods-MusicAlbum/Pods-MusicAlbum.debug.xcconfig"; sourceTree = "<group>"; };
+		C77BCD8123EE6A67D4315018 /* Pods-MusicAlbumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicAlbumTests.debug.xcconfig"; path = "Target Support Files/Pods-MusicAlbumTests/Pods-MusicAlbumTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE75DFAC391286AB40CF2020 /* Pods_MusicAlbum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicAlbum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E519E76B0D6F905AF8F518DD /* Pods-MusicAlbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicAlbum.release.xcconfig"; path = "Target Support Files/Pods-MusicAlbum/Pods-MusicAlbum.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A2D88C424CB04480081EA97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7033E90599B37132426F679D /* Pods_MusicAlbum.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A2D88DA24CB04490081EA97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4BC4B990BCC05CBF7578CA /* Pods_MusicAlbumTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07D9FA12B2433F1F65C9E9A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93F20EFE99FC044341C364C8 /* Pods-MusicAlbum.debug.xcconfig */,
+				E519E76B0D6F905AF8F518DD /* Pods-MusicAlbum.release.xcconfig */,
+				C77BCD8123EE6A67D4315018 /* Pods-MusicAlbumTests.debug.xcconfig */,
+				11994CBBEB71DCC96C5155F8 /* Pods-MusicAlbumTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A2D88BE24CB04480081EA97 = {
+			isa = PBXGroup;
+			children = (
+				8A1C4F1024D1768400D7C084 /* test.swift */,
+				8A2D88C924CB04480081EA97 /* MusicAlbum */,
+				8A2D88E024CB04490081EA97 /* MusicAlbumTests */,
+				8A2D88C824CB04480081EA97 /* Products */,
+				07D9FA12B2433F1F65C9E9A2 /* Pods */,
+				BAFF79D529C8021B083D1101 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A2D88C824CB04480081EA97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A2D88C724CB04480081EA97 /* MusicAlbum.app */,
+				8A2D88DD24CB04490081EA97 /* MusicAlbumTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A2D88C924CB04480081EA97 /* MusicAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				8A5A222224CC58E500D1F5ED /* Data */,
+				8A5A221124CC3CBA00D1F5ED /* Onboarding */,
+				8A5A221224CC3CC600D1F5ED /* SavedAlbums */,
+				8A5A221924CC4B7400D1F5ED /* AlbumSearch */,
+				8A5A221B24CC4FB000D1F5ED /* AlbumDetails */,
+				8A5A220C24CC326500D1F5ED /* Coordinators */,
+				8A5A220524CC2CF500D1F5ED /* ExtensionsProtocols */,
+				8A2D88CA24CB04480081EA97 /* AppDelegate.swift */,
+				8A2D88CE24CB04480081EA97 /* ViewController.swift */,
+				8A5A220424CC2C4100D1F5ED /* SupportingFiles */,
+			);
+			path = MusicAlbum;
+			sourceTree = "<group>";
+		};
+		8A2D88E024CB04490081EA97 /* MusicAlbumTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A2D88E124CB04490081EA97 /* MusicAlbumTests.swift */,
+				8A2D88E324CB04490081EA97 /* Info.plist */,
+			);
+			path = MusicAlbumTests;
+			sourceTree = "<group>";
+		};
+		8A5A220424CC2C4100D1F5ED /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8A2D88D324CB04490081EA97 /* Assets.xcassets */,
+				8A2D88D524CB04490081EA97 /* LaunchScreen.storyboard */,
+				8A2D88D824CB04490081EA97 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		8A5A220524CC2CF500D1F5ED /* ExtensionsProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				8A5A220624CC2D1A00D1F5ED /* Coordinator.swift */,
+				8A5A220F24CC382A00D1F5ED /* Navigator.swift */,
+				8A5A222724CC651100D1F5ED /* Storyboarded.swift */,
+			);
+			path = ExtensionsProtocols;
+			sourceTree = "<group>";
+		};
+		8A5A220C24CC326500D1F5ED /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8A5A220D24CC352700D1F5ED /* AppCoordinator.swift */,
+				8A5A222524CC5F2700D1F5ED /* ApprootViewController.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8A5A221124CC3CBA00D1F5ED /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8A5A221C24CC508400D1F5ED /* OnboardingCoordinator.swift */,
+				8A5A221E24CC509200D1F5ED /* OnboardingViewController.swift */,
+				8A5A222024CC509C00D1F5ED /* Onboarding.storyboard */,
+				8AF8597B24CC8C7900B166E3 /* OnboardingStep.xib */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		8A5A221224CC3CC600D1F5ED /* SavedAlbums */ = {
+			isa = PBXGroup;
+			children = (
+				8A5A221324CC494500D1F5ED /* SavedAlbumCoordinator.swift */,
+				8A5A221524CC496000D1F5ED /* SavedAlbumViewController.swift */,
+				8A5A221724CC496F00D1F5ED /* SavedAlbum.storyboard */,
+				8AF8597D24CC978600B166E3 /* CollectionAlbumPreview.swift */,
+			);
+			path = SavedAlbums;
+			sourceTree = "<group>";
+		};
+		8A5A221924CC4B7400D1F5ED /* AlbumSearch */ = {
+			isa = PBXGroup;
+			children = (
+				8A5A222B24CC7A8800D1F5ED /* AlbumSearchCoordinator.swift */,
+				8A5A222D24CC7A9400D1F5ED /* AlbumSearchViewController.swift */,
+				8A5A222F24CC7AA100D1F5ED /* AlbumSearch.storyboard */,
+			);
+			path = AlbumSearch;
+			sourceTree = "<group>";
+		};
+		8A5A221B24CC4FB000D1F5ED /* AlbumDetails */ = {
+			isa = PBXGroup;
+			children = (
+				8AF8597F24CCA60E00B166E3 /* AlbumDetailsCoordinator.swift */,
+				8AF8598124CCA62300B166E3 /* AlbumDetailsViewController.swift */,
+				8AF8598324CCA64A00B166E3 /* AlbumDetails.storyboard */,
+			);
+			path = AlbumDetails;
+			sourceTree = "<group>";
+		};
+		8A5A222224CC58E500D1F5ED /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8A5A220A24CC300400D1F5ED /* DataStore.swift */,
+				8A5A222324CC5A0300D1F5ED /* Album.swift */,
+				8AF8598624CDAC7F00B166E3 /* AlbumSearchManager.swift */,
+				8ABFD7FE24CF647100CCF15E /* RealmConnector.swift */,
+				8A1C4F1324D1FA3B00D7C084 /* Artist.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BAFF79D529C8021B083D1101 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE75DFAC391286AB40CF2020 /* Pods_MusicAlbum.framework */,
+				2A39A2983BC5EFB881D98BBC /* Pods_MusicAlbumTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A2D88C624CB04480081EA97 /* MusicAlbum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A2D88E624CB04490081EA97 /* Build configuration list for PBXNativeTarget "MusicAlbum" */;
+			buildPhases = (
+				2985B1C8C1127954F22A6095 /* [CP] Check Pods Manifest.lock */,
+				8A2D88C324CB04480081EA97 /* Sources */,
+				8A2D88C424CB04480081EA97 /* Frameworks */,
+				8A2D88C524CB04480081EA97 /* Resources */,
+				C2DB0FCE8849971B86EA01D6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusicAlbum;
+			productName = MusicAlbum;
+			productReference = 8A2D88C724CB04480081EA97 /* MusicAlbum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A2D88DC24CB04490081EA97 /* MusicAlbumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A2D88E924CB04490081EA97 /* Build configuration list for PBXNativeTarget "MusicAlbumTests" */;
+			buildPhases = (
+				0319D44175D081836EE389A8 /* [CP] Check Pods Manifest.lock */,
+				8A2D88D924CB04490081EA97 /* Sources */,
+				8A2D88DA24CB04490081EA97 /* Frameworks */,
+				8A2D88DB24CB04490081EA97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A2D88DF24CB04490081EA97 /* PBXTargetDependency */,
+			);
+			name = MusicAlbumTests;
+			productName = MusicAlbumTests;
+			productReference = 8A2D88DD24CB04490081EA97 /* MusicAlbumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A2D88BF24CB04480081EA97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Chris Herlemann";
+				TargetAttributes = {
+					8A2D88C624CB04480081EA97 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					8A2D88DC24CB04490081EA97 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 8A2D88C624CB04480081EA97;
+					};
+				};
+			};
+			buildConfigurationList = 8A2D88C224CB04480081EA97 /* Build configuration list for PBXProject "MusicAlbum" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A2D88BE24CB04480081EA97;
+			productRefGroup = 8A2D88C824CB04480081EA97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A2D88C624CB04480081EA97 /* MusicAlbum */,
+				8A2D88DC24CB04490081EA97 /* MusicAlbumTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A2D88C524CB04480081EA97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A5A221824CC496F00D1F5ED /* SavedAlbum.storyboard in Resources */,
+				8A5A222124CC509C00D1F5ED /* Onboarding.storyboard in Resources */,
+				8A5A223024CC7AA100D1F5ED /* AlbumSearch.storyboard in Resources */,
+				8A2D88D724CB04490081EA97 /* LaunchScreen.storyboard in Resources */,
+				8AF8597C24CC8C7900B166E3 /* OnboardingStep.xib in Resources */,
+				8AF8598424CCA64A00B166E3 /* AlbumDetails.storyboard in Resources */,
+				8A2D88D424CB04490081EA97 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A2D88DB24CB04490081EA97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0319D44175D081836EE389A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusicAlbumTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2985B1C8C1127954F22A6095 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusicAlbum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2DB0FCE8849971B86EA01D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusicAlbum/Pods-MusicAlbum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusicAlbum/Pods-MusicAlbum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MusicAlbum/Pods-MusicAlbum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A2D88C324CB04480081EA97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A5A220724CC2D1A00D1F5ED /* Coordinator.swift in Sources */,
+				8A2D88CF24CB04480081EA97 /* ViewController.swift in Sources */,
+				8ABFD7FF24CF647100CCF15E /* RealmConnector.swift in Sources */,
+				8A5A222624CC5F2700D1F5ED /* ApprootViewController.swift in Sources */,
+				8A5A221424CC494500D1F5ED /* SavedAlbumCoordinator.swift in Sources */,
+				8A5A220E24CC352700D1F5ED /* AppCoordinator.swift in Sources */,
+				8AF8598224CCA62300B166E3 /* AlbumDetailsViewController.swift in Sources */,
+				8A5A222824CC651100D1F5ED /* Storyboarded.swift in Sources */,
+				8AF8597E24CC978600B166E3 /* CollectionAlbumPreview.swift in Sources */,
+				8A5A221D24CC508400D1F5ED /* OnboardingCoordinator.swift in Sources */,
+				8A5A221624CC496000D1F5ED /* SavedAlbumViewController.swift in Sources */,
+				8AF8598024CCA60E00B166E3 /* AlbumDetailsCoordinator.swift in Sources */,
+				8A1C4F1424D1FA3B00D7C084 /* Artist.swift in Sources */,
+				8A5A220B24CC300400D1F5ED /* DataStore.swift in Sources */,
+				8A5A222E24CC7A9400D1F5ED /* AlbumSearchViewController.swift in Sources */,
+				8A5A221F24CC509200D1F5ED /* OnboardingViewController.swift in Sources */,
+				8A5A222424CC5A0300D1F5ED /* Album.swift in Sources */,
+				8A2D88CB24CB04480081EA97 /* AppDelegate.swift in Sources */,
+				8A5A222C24CC7A8800D1F5ED /* AlbumSearchCoordinator.swift in Sources */,
+				8AF8598724CDAC7F00B166E3 /* AlbumSearchManager.swift in Sources */,
+				8A5A221024CC382A00D1F5ED /* Navigator.swift in Sources */,
+				8A1C4F1124D1768400D7C084 /* test.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A2D88D924CB04490081EA97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2D88E224CB04490081EA97 /* MusicAlbumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A2D88DF24CB04490081EA97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A2D88C624CB04480081EA97 /* MusicAlbum */;
+			targetProxy = 8A2D88DE24CB04490081EA97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A2D88D524CB04490081EA97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A2D88D624CB04490081EA97 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A2D88E424CB04490081EA97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A2D88E524CB04490081EA97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A2D88E724CB04490081EA97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93F20EFE99FC044341C364C8 /* Pods-MusicAlbum.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FT8G5B36F3;
+				INFOPLIST_FILE = MusicAlbum/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = herlor.de.MusicAlbum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8A2D88E824CB04490081EA97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E519E76B0D6F905AF8F518DD /* Pods-MusicAlbum.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FT8G5B36F3;
+				INFOPLIST_FILE = MusicAlbum/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = herlor.de.MusicAlbum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8A2D88EA24CB04490081EA97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C77BCD8123EE6A67D4315018 /* Pods-MusicAlbumTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FT8G5B36F3;
+				INFOPLIST_FILE = MusicAlbumTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = herlor.de.MusicAlbumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicAlbum.app/MusicAlbum";
+			};
+			name = Debug;
+		};
+		8A2D88EB24CB04490081EA97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11994CBBEB71DCC96C5155F8 /* Pods-MusicAlbumTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FT8G5B36F3;
+				INFOPLIST_FILE = MusicAlbumTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = herlor.de.MusicAlbumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicAlbum.app/MusicAlbum";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A2D88C224CB04480081EA97 /* Build configuration list for PBXProject "MusicAlbum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A2D88E424CB04490081EA97 /* Debug */,
+				8A2D88E524CB04490081EA97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A2D88E624CB04490081EA97 /* Build configuration list for PBXNativeTarget "MusicAlbum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A2D88E724CB04490081EA97 /* Debug */,
+				8A2D88E824CB04490081EA97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A2D88E924CB04490081EA97 /* Build configuration list for PBXNativeTarget "MusicAlbumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A2D88EA24CB04490081EA97 /* Debug */,
+				8A2D88EB24CB04490081EA97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A2D88BF24CB04480081EA97 /* Project object */;
+}

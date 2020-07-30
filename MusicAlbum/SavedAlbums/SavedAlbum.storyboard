@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iB4-9H-NwC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Saved Album View Controller-->
+        <scene sceneID="IYo-Ln-Gey">
+            <objects>
+                <viewController storyboardIdentifier="SavedAlbumViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iB4-9H-NwC" customClass="SavedAlbumViewController" customModule="MusicAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aav-EE-G5f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bPD-CP-1P2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Tvc-O0-oyW">
+                                    <size key="itemSize" width="58" height="97"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AlbumPreview" id="yqo-TL-MzC" customClass="AlbumPreview" customModule="MusicAlbum" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="58" height="97"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4Ug-ym-kJy">
+                                            <rect key="frame" x="0.0" y="0.0" width="58" height="97"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MusicAlbum" translatesAutoresizingMaskIntoConstraints="NO" id="pTD-Wa-d7Q">
+                                                    <rect key="frame" x="8" y="8" width="42" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="pTD-Wa-d7Q" secondAttribute="height" multiplier="1:1" id="9qK-1W-lNi"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZE-zA-gGp">
+                                                    <rect key="frame" x="8" y="75" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lep-XG-Df7">
+                                                    <rect key="frame" x="8" y="54" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pTD-Wa-d7Q" firstAttribute="leading" secondItem="4Ug-ym-kJy" secondAttribute="leading" constant="8" id="6We-w1-U4K"/>
+                                                <constraint firstItem="lep-XG-Df7" firstAttribute="leading" secondItem="4Ug-ym-kJy" secondAttribute="leading" constant="8" id="7le-29-CDR"/>
+                                                <constraint firstItem="aZE-zA-gGp" firstAttribute="leading" secondItem="4Ug-ym-kJy" secondAttribute="leading" constant="8" id="D5i-mD-6gf"/>
+                                                <constraint firstAttribute="trailing" secondItem="aZE-zA-gGp" secondAttribute="trailing" constant="8" id="FyZ-0J-gWU"/>
+                                                <constraint firstItem="aZE-zA-gGp" firstAttribute="top" secondItem="lep-XG-Df7" secondAttribute="bottom" id="GW8-LZ-jbm"/>
+                                                <constraint firstAttribute="trailing" secondItem="lep-XG-Df7" secondAttribute="trailing" constant="8" id="N6a-4g-WX5"/>
+                                                <constraint firstItem="pTD-Wa-d7Q" firstAttribute="top" secondItem="4Ug-ym-kJy" secondAttribute="top" constant="8" id="Sxv-t4-DTc"/>
+                                                <constraint firstItem="lep-XG-Df7" firstAttribute="top" secondItem="pTD-Wa-d7Q" secondAttribute="bottom" constant="4" id="aFV-Dp-X5U"/>
+                                                <constraint firstAttribute="trailing" secondItem="pTD-Wa-d7Q" secondAttribute="trailing" constant="8" id="f8e-8n-h8O"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="58" height="97"/>
+                                        <connections>
+                                            <outlet property="albumArtist" destination="aZE-zA-gGp" id="tVm-7a-LtM"/>
+                                            <outlet property="albumCover" destination="pTD-Wa-d7Q" id="seb-TH-Qsb"/>
+                                            <outlet property="albumName" destination="lep-XG-Df7" id="Wpc-Bo-UGu"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="qlU-89-TTg" firstAttribute="bottom" secondItem="bPD-CP-1P2" secondAttribute="bottom" id="0go-wr-AiF"/>
+                            <constraint firstItem="qlU-89-TTg" firstAttribute="trailing" secondItem="bPD-CP-1P2" secondAttribute="trailing" id="3gh-zH-r8x"/>
+                            <constraint firstItem="bPD-CP-1P2" firstAttribute="leading" secondItem="qlU-89-TTg" secondAttribute="leading" id="AyX-Pn-16k"/>
+                            <constraint firstItem="bPD-CP-1P2" firstAttribute="top" secondItem="qlU-89-TTg" secondAttribute="top" id="aOs-0t-sHr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qlU-89-TTg"/>
+                    </view>
+                    <connections>
+                        <outlet property="albumCollection" destination="bPD-CP-1P2" id="j0u-6z-APy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bBN-Sd-Wv2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="521.73913043478262" y="-211.60714285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MusicAlbum" width="1333.5" height="1333.5"/>
+    </resources>
+</document>

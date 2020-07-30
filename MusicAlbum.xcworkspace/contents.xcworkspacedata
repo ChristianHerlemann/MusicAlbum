@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:MusicAlbum.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <Group
+      location = "group:Pods"
+      name = "Targets Support Files">
+      <Group
+         location = "group:Pods/Target Support Files/Pods-MusicAlbum"
+         name = "Pods-MusicAlbum">
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-MusicAlbum/Pods-MusicAlbum.modulemap">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-MusicAlbum/Pods-MusicAlbum-acknowledgements.markdown">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-MusicAlbum/Pods-MusicAlbum-acknowledgements.plist">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-MusicAlbum/Pods-MusicAlbum-dummy.m">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-MusicAlbum/Pods-MusicAlbum-frameworks.sh">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-MusicAlbum/Pods-MusicAlbum-Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-MusicAlbum/Pods-MusicAlbum-umbrella.h">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-MusicAlbum/Pods-MusicAlbum.debug.xcconfig">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-MusicAlbum/Pods-MusicAlbum.release.xcconfig">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Pods/Target Support Files/Pods-MusicAlbumTests"
+         name = "Pods-MusicAlbumTests">
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-MusicAlbumTests/Pods-MusicAlbumTests.modulemap">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-MusicAlbumTests/Pods-MusicAlbumTests-acknowledgements.markdown">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-MusicAlbumTests/Pods-MusicAlbumTests-acknowledgements.plist">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-MusicAlbumTests/Pods-MusicAlbumTests-dummy.m">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-MusicAlbumTests/Pods-MusicAlbumTests-Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-MusicAlbumTests/Pods-MusicAlbumTests-umbrella.h">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-MusicAlbumTests/Pods-MusicAlbumTests.debug.xcconfig">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-MusicAlbumTests/Pods-MusicAlbumTests.release.xcconfig">
+         </FileRef>
+      </Group>
+   </Group>
+</Workspace>
