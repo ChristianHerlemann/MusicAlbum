@@ -47,6 +47,10 @@ class AlbumDetailsViewController: UIViewController, Storyboarded {
       NotificationCenter.default.addObserver(self, selector: #selector(checkSaved), name: .DatabaseChanged, object: nil)
    }
    
+   override func viewWillDisappear(_ animated: Bool) {
+      NotificationCenter.default.removeObserver(self, name: .DatabaseChanged, object: nil)
+   }
+   
    private func reloadData() {
       
       if let coverURL = displayedAlbum?.cover {
