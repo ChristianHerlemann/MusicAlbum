@@ -32,6 +32,7 @@
 		8A5A222E24CC7A9400D1F5ED /* AlbumSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A222D24CC7A9400D1F5ED /* AlbumSearchViewController.swift */; };
 		8A5A223024CC7AA100D1F5ED /* AlbumSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5A222F24CC7AA100D1F5ED /* AlbumSearch.storyboard */; };
 		8ABFD7FF24CF647100CCF15E /* RealmConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABFD7FE24CF647100CCF15E /* RealmConnector.swift */; };
+		8AE3915224F513BB009BCBF5 /* AlbumSearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE3915124F513BB009BCBF5 /* AlbumSearchRouter.swift */; };
 		8AF8597C24CC8C7900B166E3 /* OnboardingStep.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AF8597B24CC8C7900B166E3 /* OnboardingStep.xib */; };
 		8AF8597E24CC978600B166E3 /* CollectionAlbumPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF8597D24CC978600B166E3 /* CollectionAlbumPreview.swift */; };
 		8AF8598024CCA60E00B166E3 /* AlbumDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF8597F24CCA60E00B166E3 /* AlbumDetailsCoordinator.swift */; };
@@ -82,6 +83,7 @@
 		8A5A222D24CC7A9400D1F5ED /* AlbumSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSearchViewController.swift; sourceTree = "<group>"; };
 		8A5A222F24CC7AA100D1F5ED /* AlbumSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbumSearch.storyboard; sourceTree = "<group>"; };
 		8ABFD7FE24CF647100CCF15E /* RealmConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmConnector.swift; sourceTree = "<group>"; };
+		8AE3915124F513BB009BCBF5 /* AlbumSearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSearchRouter.swift; sourceTree = "<group>"; };
 		8AF8597B24CC8C7900B166E3 /* OnboardingStep.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingStep.xib; sourceTree = "<group>"; };
 		8AF8597D24CC978600B166E3 /* CollectionAlbumPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionAlbumPreview.swift; sourceTree = "<group>"; };
 		8AF8597F24CCA60E00B166E3 /* AlbumDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsCoordinator.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				8AF8598624CDAC7F00B166E3 /* AlbumSearchManager.swift */,
 				8ABFD7FE24CF647100CCF15E /* RealmConnector.swift */,
 				8A1C4F1324D1FA3B00D7C084 /* Artist.swift */,
+				8AE3915124F513BB009BCBF5 /* AlbumSearchRouter.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				8A5A220B24CC300400D1F5ED /* DataStore.swift in Sources */,
 				8A5A222E24CC7A9400D1F5ED /* AlbumSearchViewController.swift in Sources */,
 				8A5A221F24CC509200D1F5ED /* OnboardingViewController.swift in Sources */,
+				8AE3915224F513BB009BCBF5 /* AlbumSearchRouter.swift in Sources */,
 				8A5A222424CC5A0300D1F5ED /* Album.swift in Sources */,
 				8A2D88CB24CB04480081EA97 /* AppDelegate.swift in Sources */,
 				8A5A222C24CC7A8800D1F5ED /* AlbumSearchCoordinator.swift in Sources */,

@@ -14,84 +14,43 @@ class AlbumSearchManager {
    
    static let shared = AlbumSearchManager()
    
-   let lastFMDetails: [String: String] = [
-      "APIkey": "7cdf32b83f156e21972a8b50b70468e9",
-      "BaseURL": "https://ws.audioscrobbler.com/2.0/",
-      "SharedSecret": "4f5530aede3daf2cd3accbfdad9d8ea8",
-      "Username": "chrisherlemann"]
-   
    private init() {}
    
    func search(for phrase: String, completion: @escaping ([Album]?) -> Void) {
-      guard let baseURL = lastFMDetails["BaseURL"] else { return }
       
-      let searchParameters = [
-         "method": "album.search",
-         "album": phrase,
-         "api_key": lastFMDetails["APIkey"],
-         "format": "json"
-      ]
-      
-      AF.request(baseURL, parameters: searchParameters).response { response in
+      AF.request(Router.searchAlbum(albumName: phrase)).responseDecodable(of: AlbumSearchResults.self) { response in
          
-         guard let data = response.data else { return }
-         do {
-            let decoder = JSONDecoder()
-            let searchResult = try decoder.decode(AlbumSearchResults.self, from: data)
-            completion(searchResult.results.albumMatches.album)
-         } catch let error {
+         switch response.result {
+         case .failure(let error):
             print(error)
-            completion(nil)
+         case .success(let data):
+            completion(data.results.albumMatches.album)
          }
       }
    }
    
    func search(for phrase: String, completion: @escaping ([Artist]?) -> Void) {
-      guard let baseURL = lastFMDetails["BaseURL"] else { return }
       
-      let searchParameters = [
-         "method": "artist.search",
-         "artist": phrase,
-         "api_key": lastFMDetails["APIkey"],
-         "format": "json"
-      ]
-      
-      AF.request(baseURL, parameters: searchParameters).response { response in
+      AF.request(Router.searchArtist(artistName: phrase)).responseDecodable(of: ArtistSearchResults.self) { response in
          
-         guard let data = response.data else { return }
-         do {
-            let decoder = JSONDecoder()
-            let searchResult = try decoder.decode(ArtistSearchResults.self, from: data)
-            completion(searchResult.results.artistMatches.artist)
-         } catch let error {
+         switch response.result {
+         case .failure(let error):
             print(error)
-            completion(nil)
+         case .success(let data):
+            completion(data.results.artistMatches.artist)
          }
       }
    }
    
    func getAlbumInfo(name albumName: String, artist: String, completion: @escaping (Album?) -> Void) {
       
-      guard let baseURL = lastFMDetails["BaseURL"] else { return }
-      
-      let albumParameters = [
-         "method": "album.getInfo",
-         "album": albumName,
-         "artist": artist,
-         "api_key": lastFMDetails["APIkey"],
-         "format": "json"
-      ]
-      
-      AF.request(baseURL, parameters: albumParameters).response { response in
-         guard let data = response.data else { return }
-         do {
-            let decoder = JSONDecoder()
-            let albumInfo = try decoder.decode(AlbumInfo.self, from: data)
-            
-            completion(albumInfo.album)
-         } catch let error {
+      AF.request(Router.albumInfo(albumName: albumName, artistName: artist)).responseDecodable(of: AlbumInfo.self) { response in
+         
+         switch response.result {
+         case .failure(let error):
             print(error)
-            completion(nil)
+         case .success(let data):
+            completion(data.album)
          }
       }
    }
