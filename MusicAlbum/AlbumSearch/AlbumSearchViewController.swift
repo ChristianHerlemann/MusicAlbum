@@ -15,8 +15,8 @@ protocol AlbumSearchViewControllerDelegate: class {
 }
 
 enum SearchType: Int {
-   case ArtistSearch = 0
-   case AlbumSearch = 1
+   case AlbumSearch = 0
+   case ArtistSearch = 1
 }
 
 class AlbumSearchViewController: UIViewController, Storyboarded {
